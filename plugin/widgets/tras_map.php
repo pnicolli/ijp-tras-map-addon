@@ -30,17 +30,21 @@ class Elementor_Ijp_Tras_Map_Widget extends \Elementor\Widget_Base {
 	}
 
 	protected function render() {
+		$svg_path = dirname(__DIR__) . "/assets/map.svg";
+		$svg_content = file_get_contents($svg_path);
 		?>
 		<div class="ijp-tras-map">
-			<img class="ijp-tras-map__image" src="<?php echo plugins_url( 'assets/map.svg', dirname(__FILE__) ); ?>" alt="TRAs Map" width="784" height="458.6">
+			<?php echo $svg_content; ?>
 		</div>
 		<?php
 	}
 
 	protected function content_template() {
+		$svg_path = dirname(__DIR__) . "/assets/map.svg";
+		$svg_content = file_get_contents($svg_path);
 		?>
 		<div class="ijp-tras-map">
-			<img class="ijp-tras-map__image" src="<?php echo plugins_url( 'assets/map.svg', dirname(__FILE__) ); ?>" alt="TRAs Map" width="784" height="458.6">
+			<?php echo $svg_content; ?>
 		</div>
 		<?php
 	}
