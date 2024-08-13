@@ -1,0 +1,16 @@
+services:
+  db:
+    image: mysql
+    container_name: some-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      MYSQL_DATABASE: ijp
+      MYSQL_USER: ijp
+      MYSQL_PASSWORD: ijp
+  wordpress:
+    image: wordpress
+    container_name: some-wordpress
+    ports:
+      - "8080:80"
+    volumes:
+      - "./plugin:/var/www/html/wp-content/plugins/ijp-tras-map-addon/"
