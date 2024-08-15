@@ -11,6 +11,6 @@ services:
     image: wordpress
     container_name: some-wordpress
     ports:
-      - "8080:80"
+      - '8080:80'
     volumes:
-      - "./plugin:/var/www/html/wp-content/plugins/ijp-tras-map-addon/"
+      - './ijp-tras-map-addon:/var/www/html/wp-content/plugins/ijp-tras-map-addon/'
