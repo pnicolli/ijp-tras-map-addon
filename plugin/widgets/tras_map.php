@@ -35,6 +35,7 @@ class Elementor_Ijp_Tras_Map_Widget extends \Elementor\Widget_Base {
 		?>
 		<div class="ijp-tras-map">
 			<?php echo $svg_content; ?>
+			<div id="ijp-map-tooltip" role="tooltip"></div>
 		</div>
 		<?php
 	}
@@ -45,6 +46,7 @@ class Elementor_Ijp_Tras_Map_Widget extends \Elementor\Widget_Base {
 		?>
 		<div class="ijp-tras-map">
 			<?php echo $svg_content; ?>
+			<div id="ijp-map-tooltip" role="tooltip"></div>
 		</div>
 		<?php
 	}

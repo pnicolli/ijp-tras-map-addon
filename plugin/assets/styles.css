@@ -1,4 +1,26 @@
 .ijp-tras-map svg {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  fill: #777;
+}
+
+.ijp-tras-map .hovered {
+  fill: var(--e-global-color-accent);
+}
+
+#ijp-map-tooltip {
+  display: none;
+  width: max-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  color: white;
+  padding: 0.65em 0.9em;
+  border-radius: 6px;
+  border: 3px solid white;
+}
+
+#ijp-map-tooltip .ra {
+  font-weight: bold;
 }
